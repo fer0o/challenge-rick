@@ -5,12 +5,9 @@ const Navbar = () => {
     <div>
       <nav className='  bg-black  m-auto p-4'>
         <div className='container'>
-          <a
-            className='text-white text-2xl uppercase block text-center'
-            href='/'
-          >
+          <span className='text-white text-2xl uppercase block text-center'>
             Rick and Morty App
-          </a>
+          </span>
         </div>
       </nav>
     </div>

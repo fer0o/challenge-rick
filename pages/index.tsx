@@ -9,6 +9,7 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
   return (
     <div>
       <Navbar />
+      {/* part of the fetch data */}
       <div>
         {/* map the json */}
         {characters.map(character => {
