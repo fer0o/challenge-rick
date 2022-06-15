@@ -41,7 +41,7 @@ export enum Species {
 }
 
 export enum Status {
-    Alive = "Alivee",
+    Alive = "Alive",
     Dead = "Dead",
     Unknown = "unknown",
 }
