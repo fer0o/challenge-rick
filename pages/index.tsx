@@ -16,7 +16,7 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
         <Navbar />
       </div>
       <div className='absolute top-28 lg:top-32 z-50'>
-        <Balance />
+        <Balance balance={'Saldo Disponible'} money={'$1,499,970.00'} />
       </div>
       <div className='relative'>
         <Icons />
