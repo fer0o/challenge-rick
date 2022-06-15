@@ -2,6 +2,7 @@ import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Balance from '../components/firstView/Balance'
+import Footer from '../components/firstView/Footer'
 import Icons from '../components/firstView/Icons'
 import Navbar from '../components/firstView/Navbar'
 import NewPayment from '../components/firstView/NewPayment'
@@ -61,7 +62,11 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
             )
           })}
         </div>
+        <div className=' '>
+          <Footer />
+        </div>
       </div>
+      {/* end fetch data part */}
     </div>
   )
 }
