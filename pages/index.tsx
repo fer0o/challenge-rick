@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Balance from '../components/firstView/Balance'
 import Icons from '../components/firstView/Icons'
 import Navbar from '../components/firstView/Navbar'
+import NewPayment from '../components/firstView/NewPayment'
 import styles from '../styles/Home.module.css'
 import { Character, GetCharacterResults } from '../types'
 
@@ -18,6 +19,9 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
       </div>
       <div className='relative'>
         <Icons />
+      </div>
+      <div className='absolute top-[17rem] z-50  lg:top-96'>
+        <NewPayment />
       </div>
 
       {/* part of the fetch data */}

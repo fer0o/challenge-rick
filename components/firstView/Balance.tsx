@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Balance = () => {
   return (
     <div className='border rounded ring-0 ring-gray-50 lg:w-full lg:h-24 w-[300px] h-[86px] lg:block  lg:items-center  p-3 lg:mx-96 mx-9  bg-white '>
