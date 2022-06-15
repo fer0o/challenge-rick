@@ -1,11 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-For CSS I used TailwindCSS and for Icons I used React Icons
+For CSS style I used TailwindCSS (https://tailwindcss.com/docs/installation)
+and for Icons I used React Icons (https://react-icons.github.io/react-icons) 
 The information used for this challenge are for the Rick and Morty API  (https://rickandmortyapi.com/api/character)
 
 ## Getting Started
 ## Instalation
 To install the project is necessary type on a terminal 
-```npm install
+```bash
+npm install
 ```
 after install the projects you can run the project with 
 ```bash
