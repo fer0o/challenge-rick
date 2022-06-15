@@ -14,7 +14,7 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
       <div className='relative'>
         <Navbar />
       </div>
-      <div className='absolute top-28 z-50'>
+      <div className='absolute top-28 lg:top-32 z-50'>
         <Balance />
       </div>
       <div className='relative'>

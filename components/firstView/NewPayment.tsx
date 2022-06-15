@@ -3,7 +3,7 @@ import { FaRegCreditCard } from 'react-icons/fa'
 const NewPayment = () => {
   return (
     <div>
-      <div className=' border-2 rounded m-9 p-2 bg-white text-black w-80 h-auto lg:w-full lg:h-auto lg:m-1 lg:p-4 lg:mx-96 lg:space-y-4 space-y-1 '>
+      <div className=' border-2 drop-shadow-md rounded m-9 p-2 bg-white text-black w-80 h-auto lg:w-full lg:h-auto lg:m-1 lg:p-4 lg:mx-96 lg:space-y-4 space-y-1 '>
         <div className='flex flex-col lg:space-y-2 '>
           <h2>Tu próximo pago</h2>
           <h2 className='text-4xl font-bold mb-2'>$28,860.00</h2>
