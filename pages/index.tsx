@@ -1,6 +1,7 @@
 import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Balance from '../components/firstView/Balance'
 import Footer from '../components/firstView/Footer'
 import Icons from '../components/firstView/Icons'
@@ -27,7 +28,9 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
       <div className='relative top-56 lg:top-72 '>
         <div className=' mx-4 space-x-16 mb-4'>
           <span className='text-2xl font-bold'>Tus Movimientos</span>
-          <span className='text-lg text-blue-300'>Ver Todos</span>
+          <Link href='/disposicion'>
+            <span className='text-lg text-blue-300'>Ver Todos</span>
+          </Link>
         </div>
         {/* fetch data part */}
         <div className='divide-y  mx-8 '>
