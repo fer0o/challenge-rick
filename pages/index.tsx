@@ -1,6 +1,8 @@
 import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Balance from '../components/firstView/Balance'
+import Icons from '../components/firstView/Icons'
 import Navbar from '../components/firstView/Navbar'
 import styles from '../styles/Home.module.css'
 import { Character, GetCharacterResults } from '../types'
@@ -8,24 +10,17 @@ import { Character, GetCharacterResults } from '../types'
 const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
   return (
     <div>
-      <Navbar />
-      {/* part of the fetch data */}
-      <div>
-        {/* map the json */}
-        {characters.map(character => {
-          return (
-            <div key={character.id}>
-              <Image
-                src={character.image}
-                alt={character.name}
-                width={300}
-                height={300}
-              />
-              <span>{character.name}</span>
-            </div>
-          )
-        })}
+      <div className='relative'>
+        <Navbar />
       </div>
+      <div className='absolute top-28 z-50'>
+        <Balance />
+      </div>
+      <div className='relative'>
+        <Icons />
+      </div>
+
+      {/* part of the fetch data */}
     </div>
   )
 }
