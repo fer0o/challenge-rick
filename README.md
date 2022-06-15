@@ -20,6 +20,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
+## Aditional Information
+For this challenge only 2 buttons are functional the button in the index page with the name "ver Todos" this button are linked with the second page. disposicion, in this page the left arrow icon is used like a button to get back to index page.
+
 ## API information
 To manage the api information I decided to use getStaticProps (https://nextjs.org/docs/basic-features/data-fetching/get-static-props) to get the necessary information to render.
 ## Coments
