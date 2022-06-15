@@ -23,8 +23,45 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
       <div className='absolute top-[17rem] z-50  lg:top-96'>
         <NewPayment />
       </div>
-
-      {/* part of the fetch data */}
+      <div className='relative top-56 lg:top-72 '>
+        <div className=' mx-4 space-x-16 mb-4'>
+          <span className='text-2xl font-bold'>Tus Movimientos</span>
+          <span className='text-lg text-blue-300'>Ver Todos</span>
+        </div>
+        {/* fetch data part */}
+        <div className='divide-y  mx-8 '>
+          {characters.map(character => {
+            return (
+              <div key={character.id} className='grid grid-cols-3 '>
+                <div className='m-2'>
+                  <Image
+                    src={character.image}
+                    alt={character.name}
+                    width={80}
+                    height={80}
+                  />
+                </div>
+                <div className='flex flex-col justify-center space-y-2'>
+                  <span className='text-xs font-semibold lg:text-2xl'>
+                    Name: {character.name}
+                  </span>
+                  <span className='text-xs lg:text-2xl'>
+                    Specie: {character.species}
+                  </span>
+                </div>
+                <div className='flex flex-col justify-center ml-8 space-y-2'>
+                  <span className='text-xs lg:text-2xl'>
+                    Id: {character.id}
+                  </span>
+                  <span className='text-xs font-semibold lg:text-2xl'>
+                    status: {character.status}
+                  </span>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
     </div>
   )
 }

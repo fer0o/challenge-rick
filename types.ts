@@ -16,7 +16,7 @@ export interface Character {
     species:  Species;
     type:     string;
     gender:   Gender;
-    origin:   Location;
+    origin:   string;
     location: Location;
     image:    string;
     episode:  string[];
@@ -41,7 +41,7 @@ export enum Species {
 }
 
 export enum Status {
-    Alive = "Alive",
+    Alive: = "Alive",
     Dead = "Dead",
     Unknown = "unknown",
 }
