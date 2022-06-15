@@ -1,5 +1,6 @@
 import Balance from '../components/firstView/Balance'
 import BorderRectangle from '../components/secondView/BorderRectangle'
+import PieChart from '../components/secondView/PieChart'
 import SecondHeader from '../components/secondView/SecondHeader'
 
 const disposicion = () => {
@@ -14,6 +15,9 @@ const disposicion = () => {
       <div>
         <BorderRectangle text='Auto' />
         <BorderRectangle text='$350,000.00' />
+      </div>
+      <div>
+        <PieChart />
       </div>
     </div>
   )

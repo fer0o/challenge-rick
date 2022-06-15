@@ -4,7 +4,7 @@ interface Props {
 }
 const Balance = ({ balance, money }: Props) => {
   return (
-    <div className='border rounded drop-shadow-md ring-0 ring-gray-50 lg:w-full lg:h-24 w-[300px] h-[86px] lg:block  lg:items-center  p-3 lg:mx-96 mx-9  bg-white '>
+    <div className='border rounded drop-shadow-md ring-0 ring-gray-50 lg:w-full lg:h-24 w-[300px] h-[86px] lg:block  lg:items-center p-3 lg:mx-96 mx-11  bg-white '>
       <span className='font-sans text-base font-semibold uppercase'>
         {balance}
       </span>
